@@ -10,7 +10,7 @@ from telegram.ext import (
     filters,
 )
 
-TOKEN = 8817054298:AAFKxIwtFg2Rek-_lCh-l7705UOasaorE2c
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Database
 db = sqlite3.connect("group_stats.db", check_same_thread=False)
